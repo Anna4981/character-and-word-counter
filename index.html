@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Character and Word Counter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Character and Word Counter</h1>
+    <p class="subtitle">Start typing and the counts update live.</p>
+
+    <textarea id="text-input" placeholder="Type or paste your text here..."></textarea>
+
+    <section class="stats">
+      <div class="stat">
+        <div class="number" id="char-count">0</div>
+        <div class="label">Characters</div>
+      </div>
+      <div class="stat">
+        <div class="number" id="char-no-space-count">0</div>
+        <div class="label">No spaces</div>
+      </div>
+      <div class="stat">
+        <div class="number" id="word-count">0</div>
+        <div class="label">Words</div>
+      </div>
+      <div class="stat">
+        <div class="number" id="sentence-count">0</div>
+        <div class="label">Sentences</div>
+      </div>
+    </section>
+
+    <button id="clear-btn" type="button">Clear text</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

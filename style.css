@@ -1,0 +1,78 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f2f6fc;
+  color: #14246b;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  background: #fff;
+  width: 100%;
+  max-width: 720px;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 30px rgba(20, 36, 107, 0.12);
+}
+
+h1 { font-size: 1.8rem; margin-bottom: 6px; }
+.subtitle { color: #5a6aa5; margin-bottom: 20px; }
+
+textarea {
+  width: 100%;
+  height: 220px;
+  padding: 14px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #14246b;
+  border: 2px solid #d3def3;
+  border-radius: 10px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s;
+}
+textarea:focus { border-color: #f97316; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.stat {
+  background: #f2f6fc;
+  border-radius: 10px;
+  padding: 14px 10px;
+  text-align: center;
+}
+.stat .number { font-size: 1.8rem; font-weight: 700; color: #f97316; }
+.stat .label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #5a6aa5;
+  margin-top: 4px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  background: #14246b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover { background: #1f348f; }
+
+@media (max-width: 560px) {
+  .card { padding: 20px; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+}
